@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>GasStation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJxjN6Y/AhOgqf9A9t02vRU4tvfXxMfcgXkbKbtXTNh38JdHYwivpMfRbxNB" crossorigin="anonymous">
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+<style>
+            .faq-container { max-width: 800px; margin: auto; }
+        #scrollTopBtn { position: fixed; bottom: 20px; right: 20px; display: none; }
+        /* Estilos específicos para o FAQs */
+        @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+    .carousel-item img {
+        max-width: 150px;
+        height: auto;
+        margin: auto;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        background: rgba(0, 0, 0, 0.3);
+        width: 5%;
+    }
+    .partners-section {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+
+    .faq-container { max-width: 800px; margin: auto; }
+    #scrollTopBtn { position: fixed; bottom: 20px; right: 20px; display: none; }
+    #map {
+            height: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .jumbotron {
+            background-color: #eee;
+            display: block;
+            padding: 50px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+      
+
+        #map {
+            height: 400px;
+            width: 100%;
+            background-image: url('https://via.placeholder.com/800x400?text=Mapa+Exemplo');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#ff4400;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .location-container {
+            position: relative;
+            width: 300px;
+            background: ;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn-search {
+            background-color: #ff4400;
+            border-color: #ff4400;
+        }
+        .btn-search:hover {
+            background-color: white;
+            border-color: black;
+        }
+
+</style>
+    </head>
+    
+    <body>
+        
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/LOGO 2.png" alt="logotipo" style="max-width: 150px;">
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                        <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html"><i class="bi bi-house"></i> Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#postos">Postos de combustivel</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servico">Nossos Serviços</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#somos">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Criar conta</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="sign-in.html" class="btn btn-primary bi-person custom-icon me-3" style="background-color: #ff4400;font-size: 20px; color: #eee; border-color: #ff4400;">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="slick-slideshow">   
+       
+                <div class="slick-custom">
+                    <img src="images/new_pics/gasstation.jpg" class="img-fluid" alt="">
+
+                    <div class="slick-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-10">
+                                    <h2 class="slick-title">
+                                        Encontre o posto de gasolina mais próximo de si.
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-custom">
+                    <img src="images/new_pics/trafic2.jpg" class="img-fluid" alt="">
+
+                    <div class="slick-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-10">
+                                    <h1 class="slick-title">Evite enchentes e poupe o seu <span style="color: #ff4400;">Tempo</span></h1>
+
+                                    <p class="lead text-white mt-lg-3 mb-lg-5" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                            Com a plataforma da GasStation pode controlar quais bombas de gasolina tem o que estás procurando e
+                                            até mesmo saber a quantidade de viaturas em tempo real.
+                                    </p>
+
+                                    <a href="about.html" class="btn custom-btn" data-toggle="collapse" data-target="#demo">Saiba como!</a>
+                                    <div id="demo" class="collapse" style="font-style: inherit; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(247, 247, 247);">
+                                        <p class="lead text-white mt-lg-3 mb-lg-5">
+                                            Cria uma conta na app e toda a mágica acontecer.
+                                        </p>    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-custom">
+                    <img src="images/world.jpg" class="img-fluid" alt="">
+
+                    <div class="slick-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-10">
+                                    <h1 class="slick-title">
+                                        <img src="images/LOGO.png" alt="">
+                                    </h1>
+
+                                    <p class="lead text-white mt-lg-3 mb-lg-5">Descomplicamos sua jornada até a bomba de combustível. Rápido, fácil e sempre no seu caminho.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+            </section>
+
+
+
+ <!-- Seção de Serviços -->
+ <section id="servicos" class="py-5 bg-light">
+    <div class="container" id="Servico">
+        <h2 class="text-center mb-4" id="serviços">Nossos <span style="color: #ff4400;">Serviços</span></h2>
+        <p class="text-center mb-5">Descubra como nossa plataforma pode facilitar o seu abastecimento e otimizar seu tempo. <a href="sign-up.html" style="color: #ff4400;">Registra-se já</a></p>
+        <div class="row text-center">
+            <!-- Serviço 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <img src="images/new_pics/localizacao.jpg" style="width: 100%;" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Localização de bombas</h5>
+                        <p class="card-text">Encontre os postos de combustível mais próximos em tempo real, sem perder tempo procurando.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serviço 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <img src="images/new_pics/operadora.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Informações Detalhadas</h5>
+                        <p class="card-text">Acesse informações completas sobre cada posto: horários, preços e tipos de combustível.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <img src="images/new_pics/electric-car.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Integração Veículos Elétrico</h5>
+                        <p class="card-text"> Indicar se o posto oferece infraestrutura para abastecimento de veículos elétricos.
+                            .</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <img src="images/new_pics/electric-car.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Publicite seu negócio aqui</h5>
+                        <p class="card-text"> Indicar se o posto oferece infraestrutura para abastecimento de veículos elétricos.
+                            .</p>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Serviço 4 -->
+             <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <img src="images/new_pics/bomba2.jpg" class="card-img-top" alt="">
+                    <div class="card-body" >
+                        <h5 class="card-title" style="font-size: 20px;">Alertas de Filas e Congestionamentos</h5>
+                        <p class="card-text"> Na GaStation encontras o nível de tráfego nos postos de abastecimento de combustíveis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serviço 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <img src="images/new_pics/business.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Gere o seu negócio</h5>
+                        <p class="card-text">Oferecemos uma plataforma para gestão do seu negócio .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <div class="location-container me-3">
+            <label for="location" class="form-label"><i class="bi bi-geo-alt"></i> Digite sua localização:</label>
+            <input type="text" class="form-control" id="location" placeholder="Ex: Luanda, Angola">
+            <button class="btn btn-search w-100 mt-2">Pesquisar</button>
+        </div>
+        <div id="map" class="flex-grow-1">
+            <img src="images/map.png" alt="" style="width: auto;">
+        </div>
+    </div>
+</div>
+<br>
+
+            <section class="about section-padding">
+                <div class="container">
+                    <div class="row" id="somos">
+
+                        <div class="col-12 text-center">
+                            <h2 class="mb-5">Sobre <span style="color: #ff4400;">Nós</span></h2>
+                        </div>
+
+                        <div class="col-lg-2 col-12 mt-auto mb-auto">
+                            <ul class="nav nav-pills mb-5 mx-auto justify-content-center align-items-center" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-youtube-tab" data-bs-toggle="pill" data-bs-target="#pills-youtube" type="button" role="tab" aria-controls="pills-youtube" aria-selected="true"></button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-10 col-12">
+                            <div class="tab-content mt-2" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                                 <div class="row">
+                                        <div class="col-lg-7 col-12">
+                                            <img src="images/team.jpg" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-lg-5 col-12">
+                                            <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5" style="position: static;">
+                                                <p class="lh-3 fw-bolder">Somos a <span style="color: #ff4400;">GasStation</span>, uma STARTUP inovadora, dedicada a transformar a maneira como você encontra postos de combustível. Com a nossa tecnologia de geolocalização - <span style="color: #ff4400;">GASStation</span>, garantimos que você nunca perca tempo procurando a bomba certa.</p>
+                                            </div>
+                                              <!-- Caixa fixa no canto inferior direito -->
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <br>
+                                            <div class="ms-lg-12 p-3 bg-white shadow-lg rounded-4 border text-center mt-n3" style="max-width: 1100px; width: 100%; margin-bottom: 200px;position: absolute;">
+                                                <div class="d-flex align-items-start mt-3">
+                                                    <i class="bi bi-eye text-primary fs-4 me-2"></i>
+                                                    <div class="text-start">
+                                                        <h6 class="fw-bold mb-0">Visão</h6>
+                                                        <p class="text-muted small mb-0"> "Tornar-nos a principal referência em soluções de mobilidade e abastecimento na África."</p>
+                                                    </div>
+                                                </div>
+                                    
+                                                <hr class="my-2">
+                                    
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-flag text-success fs-4 me-2"></i>
+                                                    <div class="text-start">
+                                                        <h6 class="fw-bold mb-0">Missão</h6>
+                                                        <p class="text-muted small mb-0">"Simplificar e otimizar a experiência de abastecimento e mobilidade para motoristas em Angola."  
+                                                            .</p>
+                                                    </div>
+                                                </div>
+             
+                                                <hr class="my-2">
+                                    
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-gem fs-4 me-2"></i>
+                                                    <div class="text-start">
+                                                        <h6 class="fw-bold mb-0">Valores</h6>
+                                                        <p class="text-muted small mb-0">Inovação,  
+                                                            Transparência,  
+                                                            Foco no cliente,  
+                                                            Sustentabilidade. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                        
+                                </div>
+                                </div>
+<br>
+                                <div class="tab-pane fade" id="pills-youtube" role="tabpanel" aria-labelledby="pills-youtube-tab">
+
+                                    <div class="row">
+                                        <div class="col-lg-1 col-7">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube-nocookie.com/embed/f_7JqPDWhfw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-5 col-12">
+                                            <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                                                <h4 class="mb-3"></h4>
+
+                                                <p>Over three years in business, We’ve had the chance to work on a variety of projects, with companies</p>
+
+                                                <p>Custom work is branding, web design, UI/UX design</p>
+
+                                                <div class="mt-2 mt-lg-auto">
+                                                    <a href="#" class="custom-link mb-2">
+                                                        Work with us
+                                                        <i class="bi-arrow-right ms-2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
+                                    <div class="row">
+                                       
+</section>
+  
+<!-- Galeria de Imagem -->
+ <!-- Fim -->
+
+
+<!-- Seção de Serviços -->
+<section id="servicos" class="py-5 bg-light">
+    <div class="container" id="Servico">
+        <h2 class="text-center mb-2">Perguntas Frequentes</h2>
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <div class="card  card shadow-sm border-0 h-100">
+          
+                  <div class="card-body">
+                    <h5 class="card-title">Como crio uma conta?</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card card shadow-sm border-0 h-100">
+          
+                  <div class="card-body">
+                    <h5 class="card-title">Como localizo uma bomba?</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card card shadow-sm border-0 h-100">
+          
+                  <div class="card-body">
+                    <h5 class="card-title">Como publicar meu negócio?</h5>
+                    <p class="card-text">This ral lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+
+              
+
+
+              <div class="col-md-3">
+                <div class="card card shadow-sm border-0 h-100">
+          
+                  <div class="card-body">
+                    <h5 class="card-title">Versão Primium vs Freemium</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+gilsovfs1@gmail.com
+
+NORBERTO
+SEBASTIAO
+
+N344556
+
+
+
+
+
+<!-- Start clients -->
+<section class="front-product" style="background-color:#f8f9fa;">
+    <h2 class="mb-4" style="text-align: center;">Futuros<span style="color: #ff4400;"> Parceiros </span></h2>
+
+<div class="container partners-section" style="background-color: #ff4400;">
+    
+    <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="images/new_pics/sonangol.png" class="d-block mx-auto" alt="Parceiro 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/new_pics/totalEnergies3.png"  class="d-block mx-auto" alt="Parceiro 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/new_pics/pumangol.png" class="d-block mx-auto" alt="Parceiro 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/new_pics/chevron2.png"  class="d-block mx-auto" alt="Parceiro 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Botão de Voltar ao Topo -->
+<button id="scrollTopBtn" class="btn btn-primary">▲</button>
+
+
+
+<section class="contact section-padding">
+    <div class="container">
+        <div class="row" id="contact">
+            
+            <div class="col-lg-6 col-12">
+                <h2 class="mb-4">Vamos <span>Começar</span></h2>
+
+                <form class="contact-form me-lg-5 pe-lg-3" role="form">
+
+                    <div class="form-floating">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+
+                        <label for="name">Nome</label>
+                    </div>
+
+                    <div class="form-floating my-4">
+                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+
+                        <label for="email">Email address</label>
+                    </div>
+                    
+                    <div class="form-floating my-4">
+                        <input type="subject" name="subject" id="subject"class="form-control" placeholder="Subject" required>
+
+                        <label for="subject">Assunto</label>
+                    </div>
+
+                    <div class="form-floating mb-4">
+                        <textarea id="message" name="message" class="form-control" placeholder="Leave a comment here" required style="height: 160px"></textarea>
+
+                        <label for="message">Contá-nos no que estás a pensar...</label>
+                    </div>
+
+                    <div class="col-lg-5 col-6">
+                        <button type="submit" class="form-control">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 col-12 mt-5 ms-auto">
+                <div class="row">
+                    <div class="col-6 border-end contact-info">
+                        <h6 class="mb-3">Nosso Email</h6>
+
+                        <a href="mailto:info@gasstation.com  
+                        " class="custom-link">
+                            info@gasstation.com  
+
+                            <i class="bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-6 contact-info">
+                        <h6 class="mb-3">Contacto</h6>
+
+                        <a href="+244 949 759 479
+                        " class="custom-link">
+                            +244 949 759 479
+
+                            <i class="bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-6 border-top border-end contact-info">
+                        <h6 class="mb-3">Nossa Localização</h6>
+
+                        <p class="text-muted">Luanda, Angola.  
+                        </p>
+                    </div>
+
+                    <div class="col-6 border-top contact-info">
+                        <h6 class="mb-3">Nossas Redes Sociais</h6>
+
+                        <ul class="social-icon">
+
+                            <li><a href="#" class="social-icon-link bi-messenger"></a></li>
+
+                            <li><a href="#" class=" bi-youtube"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Script Bootstrap -->
+          
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-10 me-auto mb-4">
+                        <h4 class="text-white mb-3"><a href="index.html">GASS</a>tation</h4>
+                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2025 <strong>GASStation</strong></p>
+                        <br>
+                        <p class="copyright-text">Designed by <a href="https://www.tooplate.com/" target="_blank">FOCUS</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- Botão de Voltar ao Topo -->
+
+        <script>
+            // Filtro de busca
+            document.getElementById('searchFaq').addEventListener('input', function() {
+                let query = this.value.toLowerCase();
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    let text = item.textContent.toLowerCase();
+                    item.style.display = text.includes(query) ? '' : 'none';
+                });
+            });
+            
+            // Botão de voltar ao topo
+            const scrollTopBtn = document.getElementById("scrollTopBtn");
+            window.onscroll = function() {
+                scrollTopBtn.style.display = (document.documentElement.scrollTop > 100) ? "block" : "none";
+            };
+            scrollTopBtn.onclick = function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+            function initMap() {
+            var location = { lat: -23.55052, lng: -46.633308 }; // Exemplo: São Paulo, Brasil
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({ position: location, map: map });
+        }
+        </script>
+         
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+             <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    </body>
+</html>
